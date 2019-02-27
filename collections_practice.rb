@@ -32,6 +32,6 @@ def sum_array(array)
 end
 
 def add_s (array)
-new_array = array.each_with_index.collect {|x, index| x + "s"}.drop[2]
+  array.each_with_index.collect {|x, index| if index != 1}
 
 end
